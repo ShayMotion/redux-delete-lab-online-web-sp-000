@@ -104,7 +104,7 @@ describe('Band Component with Redux', () => {
 
     expect(store.getState().bands.length).to.equal(1)
     deleteButton.simulate('click',  { preventDefault() {} });
-    // expect(store.getState().bands.length).to.equal(0)
+    expect(store.getState().bands.length).to.equal(0)
 
   });
 
