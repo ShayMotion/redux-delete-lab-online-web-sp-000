@@ -103,7 +103,7 @@ describe('Band Component with Redux', () => {
     let deleteButton = wrapper.find('button').first();
 
     expect(store.getState().bands.length).to.equal(1)
-    // deleteButton.simulate('click',  { preventDefault() {} });
+    deleteButton.simulate('click',  { preventDefault() {} });
     // expect(store.getState().bands.length).to.equal(0)
 
   });
